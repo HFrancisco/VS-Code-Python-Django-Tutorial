@@ -1,0 +1,32 @@
+Some notes for Python Django stuff
+------------------------------------------------------------------------
+VS Code Python Django tutorial
+https://code.visualstudio.com/docs/python/tutorial-django
+
+------------------------------------------------------------------------
+
+Run "env\scripts\activate" in cmd/terminal to launch virtual environment
+
+------------------------------------------------------------------------
+
+Run "python manage.py collectstatic" every time change is made to 
+    static files
+
+------------------------------------------------------------------------
+
+Models in models.py represent objects in DB
+    -> Make changes to models in models.py
+    -> Run "python manage.py makemigrations" creates scripts in migrations 
+        folder to migrate DB from old state to new state
+    -> Run  "python manage.py migrate"  to apply scripts to actual DB
+
+------------------------------------------------------------------------
+
+Generally omit the virtual environment folder from source control
+    Instead create "requirements.txt" which contains dependencies
+    -> Use "pip freeze > requirements.txt" to auto create
+        -> To reinstall packages, use "pip install -r requirements.txt"
+
+------------------------------------------------------------------------
+
+Admin username is user, email is email@email.com, password is eightletters
